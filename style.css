@@ -1,4 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 body
 {
-    background-color: b
+    background-color:darkolivegreen;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+ .menu_superior{
+display: flex;
+justify-content: space-between;
+align-items: center;
+position: fixed;
+height: 75px;
+width: 100%;
+background-color:darkgreen;
+
+
+ }
+ #menu{
+display:flex;
+flex-direction: row;
+
+ }
+
+ #menu li{
+list-style: none;  /* esto es para sacar estilo de la lista*/
+margin: 0px 20px; /*10arriba abajo y 20 costado*/
+ }
+
+ #menu li a {
+    color: aliceblue;
+    font-size:15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+ }
+ #buscadorPokemon{
+  margin: 0px 20px;
+
+ }
+ #botonbuscar{
+background-color: coral;
+font-family: cursive;
+padding: 5px;
+border: solid 2px black;
+border-radius: 20px;
+ }
+main {
+padding-top: 75px;
+margin:0px 15px;
+
+}
+.imagenlogos{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items:center ;
+
+}
+
+.contenedor_pokemon{
+display: flex;
+width: 100%;
+flex-wrap: wrap; /*posicion*/
+align-items: center;
+justify-content: space-around; /*da todo el espacio igual entre div*/
+
 }

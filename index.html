@@ -1,104 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PokeDex</title>
-    <link rel="stylesheet" href="style.css">  <!--en el head tengo que poner el estilo que va a tener la pagina-->
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <!--en el head tengo que poner el estilo que va a tener la pagina-->
+  </head>
 
-<hr>
-<body id="principal">
-<header>
-    <nav class="menu_superior">
-        <div class="imagenlogos"><img src="imagenes1/logoPokedek.png" widt="65" height="40"> </div>
-        <ul id="menu">
-            <li class="principal"><a href="index.html"> <b>Página de inicio</b></a></li>
-            <li class="quienes_somos"><a href="index.html"><b>Pokemon favorito</b></a></li> 
-            <li class="categorias"><a href="index.html"><b>Categorias</b></a></li>
-            <div class="input-group md-10 row row-cols-1 ">
-                <input type="text" class="col col-lg-6  col col-12 m-2 form-control"> 
-                <button class="btn btn-danger col col-lg-2 col col-12 m-2" type="submit"> <i class="fa-solid fa-magnifying-glass"></i>BUSCAR</button>
-            </div>
-        </ul>
-    </nav>
-    </header>
-<hr> 
-    <main>
-        <ul class="collapsed">
-            <li>Proyecto POKEMON</li>
-            <nav class="menu_superior">
-                <div class="imagenlogos"><img src="imagenes1/POKEBOLA.jpg" widt="600" height="400"> </div>
-                <p class="text-muted mb-5">
-                    Los datos fueron tomados de la siguiente pagina : 
-                    <a href="https://www.pokemon.com/el/pokedex"  class="text-decoration-none">https://www.pokemon.com/el/pokedex</a>
-                  </p>
-                </ul>
-            </nav>
-        </ul>   
-
-        <br>
-        <h1>LISTADO DE POKEMON</h1>
-    <br>
-    <div class="pokemons"> 
-        <img src="imagenes1/baba.png" height="200px" alt=""> 
-        <p>N° 001</p>
-        <h2>BULBASUR</h2>
-        <div class="block">
-            <input type="button" class="btn planta botonColor" value="Planta">
-            <input type="button" class="btn veneno botonColor" value="Veneno">
-          </div>
-        
-    </div>
-    <div class="pokemons"> 
-        <img src="imagenes1/charizard.png" height="200px" alt=""> 
-        <p>N° 002</p>
-        <h2>CHARIZARD</h2>
-        <div class="block">
-            <input type="button" class="btn planta botonColor" value="Planta">
-            <input type="button" class="btn veneno botonColor" value="Veneno">
-          </div>
-        
-   </div>
-   <div class="pokemons"> 
-    <img src="imagenes1/charmander.png" height="200px" alt=""> 
-    <p>N° 003</p>
-    <h2>CHERMANDER</h2>
-      <div class="block">
-        <input type="button" class="btn planta botonColor" value="Planta">
-        <input type="button" class="btn veneno botonColor" value="Veneno">
-      </div>
-    
-    </div>
-    <div class="pokemons"> 
-    <img src="imagenes1/charmeleon.png" height="200px" alt=""> 
-    <p>N° 004</p>
-    <h2>CHARMELEON</h2>
-    <div class="block">
-        <input type="button" class="btn planta botonColor" value="Planta">
-        <input type="button" class="btn veneno botonColor" value="Veneno">
-      </div>
-    
-    </div>
-    <div class="pokemons"> 
-        <img src="imagenes1/ivysaur.png" height="200px" alt=""> 
-        <p>N° 005</p>
-        <h2>IVYSAUR</h2>
-        <div class="block">
-            <input type="button" class="btn planta botonColor" value="Planta">
-            <input type="button" class="btn veneno botonColor" value="Veneno">
-          </div>
-        
+  <body>
+    <header>
+      <nav class="menu_superior">
+        <div class="imagenlogos">
+          <img src="imagenes1/logoPokedek.png" widt="70" height="55" />
         </div>
-     
-</div>
+        <ul id="menu">
+          <li class="link_menu">
+            <a href="index.html"> <b>Página de inicio</b></a>
+          </li>
+          <li class="link_menu">
+            <a href="index.html"><b>Pokemon favorito</b></a>
+          </li>
+          <li class="link_menu">
+            <a href="index.html"><b>Categorias</b></a>
+          </li>
+        </ul>
+        <div id="buscadorPokemon">
+          <input type="text" />
+          <button id="botonbuscar">BUSCAR</button>
+        </div>
+      </nav>
+    </header>
 
+    <main>
+      <h1>Proyecto POKEMON</h1>
+      <div class="imagenlogos">
+        <img src="imagenes1/POKEBOLA.jpg" widt="800" height="500" />
+      </div>
+      <p class="text-muted mb-5">
+        Los datos fueron tomados de la siguiente pagina :
+        <a
+          href="https://www.pokemon.com/el/pokedex"
+          class="text-decoration-none"
+          >https://www.pokemon.com/el/pokedex</a
+        >
+      </p>
 
+      <br />
+      <h3>LISTADO DE POKEMON</h3>
+      <br />
+      <div class="contenedor_pokemon">
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/baba.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 001</p>
+            <h2>BULBASUR</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/charizard.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 002</p>
+            <h2>CHARIZARD</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/charmander.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 003</p>
+            <h2>CHERMANDER</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/charmeleon.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 004</p>
+            <h2>CHARMELEON</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/ivysaur.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 005</p>
+            <h2>IVYSAUR</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/baba.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 001</p>
+            <h2>BULBASUR</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/baba.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 001</p>
+            <h2>BULBASUR</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/baba.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 001</p>
+            <h2>BULBASUR</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/baba.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 001</p>
+            <h2>BULBASUR</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/baba.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 001</p>
+            <h2>BULBASUR</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+        <div class="pokemons">
+          <div class="contenedor_img">
+            <img src="imagenes1/baba.png" height="200px" alt="" />
+          </div>
+          <div>
+            <p>N° 001</p>
+            <h2>BULBASUR</h2>
+            <div class="block">
+              <button>Planta</button>
+              <button>Veneno</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
-<br>
-<hr>
-<footer>
+  </body>
+  <br />
+  <hr />
+  <footer>
     <section class="container-fluid">
       <article class="row" id="cuerpoFooter">
         <aside class="col-xl-3 col-sm-3 col-md-3">
@@ -123,7 +223,6 @@
           <ul>
             <li><a href="/paginaerror.html">Terminos y condiciones</a></li>
             <li><a href="/paginaerror.html">Politica de privacidad</a></li>
- 
           </ul>
         </aside>
         <aside class="col-xl-3 col-sm-3 col-md-3">
@@ -157,5 +256,5 @@
       </article>
     </section>
   </footer>
-<hr>
+  <hr />
 </html>
